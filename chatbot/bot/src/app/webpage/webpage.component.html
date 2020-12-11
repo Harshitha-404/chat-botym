@@ -1,0 +1,52 @@
+
+<div class="container"> 
+    <div class="row"> 
+        <span class="text1">PIZZA</span> 
+        <span class="text2">CHAT-BOT!!!</span> 
+    </div> 
+    </div> 
+<div class="welcome">
+    <img src = "./assets/pizz2.gif" class="well">
+</div>
+<div class="paragraph">
+    <p>
+        Pizza is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.), which is then baked at a high temperature, traditionally in a wood-fired oven.
+        <br> A small pizza is sometimes called a pizzetta. A person who makes pizza is known as a pizzaiolo.<br>
+        Pizza Hut is an American restaurant chain and international franchise which was founded in 1958 in Wichita, Kansas by Dan and Frank Carney.
+        <br> The company is known for its Italian American cuisine menu, including pizza and pasta, as well as side dishes and desserts. 
+        <br>Pizza Hut has 18,703 restaurants worldwide as of December 31, 2019, making it the world's largest pizza chain in terms of locations.
+        <br> It is a subsidiary of Yum! Brands, Inc., one of the world's largest restaurant companies.
+    </p>
+  </div>  
+   
+     
+       
+        <div *ngIf = "!isDisplay" id="chat-box" >
+            <div id="massage">
+            <div class="chat-area">
+            <div class="msg">
+                <img src="./assets/OIP (1).png" alt="" class="robo">
+                <span class="start"> 👋 Hii!, How may I help you? </span>
+               
+            </div>
+            <button (click) = "create()" class="txt1">U want to Order Pizza ?🍕🍔🍟</button><br>
+            <button (click) = "create1()" class="txt2">U want to Check Order status ?📜</button>
+        </div>
+    </div>
+        
+            <div class="type">
+                <input type="text"class="in" #Input id = "form_input">
+                <button (click)="massage(Input.value)"id= "submit"class="send"><span class="material-icons">
+                    send
+                    </span></button>
+            </div>
+        </div>
+        <h3 class="text">Click Me💭</h3>
+        <button (click) = "toggleDisplay()" class="chat-btn" >
+            <span class="material-icons">
+                comment_bank
+            </span>
+            </button>
+          
+            
+    
