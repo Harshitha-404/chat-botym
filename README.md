@@ -24,6 +24,11 @@ This project is all about the online ordering Pizza since it is online ,in order
 ### In order to RUN local Server use Command:
   
   #### ng serve --open
+  
+  
+### Application Architecture  
+
+![Screenshot (421)](https://user-images.githubusercontent.com/70800409/102448066-50641200-4057-11eb-9012-b5b26cffb724.png)
 
 
 
